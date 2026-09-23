@@ -1,0 +1,29 @@
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: slotguard
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Copy .env.example to .env and set POSTGRES_PASSWORD}
+      POSTGRES_DB: slotguard
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U slotguard -d slotguard"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  app:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      DATABASE_URL: postgresql+psycopg://slotguard:${POSTGRES_PASSWORD}@db:5432/slotguard
+      DEMO_MODE: "true"
+      COOKIE_SECURE: "false"
+      ALLOWED_ORIGINS: http://127.0.0.1:8000
+      WORKSPACE_TIMEZONE: America/Argentina/Buenos_Aires
+    depends_on:
+      db:
+        condition: service_healthy
+volumes:
+  postgres-data:
