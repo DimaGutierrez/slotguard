@@ -1,5 +1,7 @@
 # Is checking availability before INSERT enough to prevent double booking?
 
+**[Try the public browser demo →](https://diegogutierrez.pages.dev/slotguard/)** — no installation or account required. Bookings, conflicts and the 201 / 409 race are simulated in this tab; reloading resets the examples. The full backend described below uses real HTTP requests and PostgreSQL when installed locally. [Demo scope](https://github.com/DimaGutierrez/slotguard/blob/main/docs/public-demo.md).
+
 ![UI, API and database layers](https://github.com/DimaGutierrez/slotguard/blob/main/assets/discussion-architecture.png?raw=true)
 
 Request A checks a room: free. Request B checks the same interval: also free. Both attempt to insert. Where does your design stop the second confirmed reservation?
