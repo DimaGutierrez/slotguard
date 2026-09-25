@@ -1,5 +1,8 @@
 ### SlotGuard
 
+- [Open public demo](https://diegogutierrez.pages.dev/slotguard/)
+- [Public Demo](https://github.com/DimaGutierrez/slotguard/wiki/Public-Demo)
+
 - [Home](https://github.com/DimaGutierrez/slotguard/wiki/Home)
 - [API and Permissions](https://github.com/DimaGutierrez/slotguard/wiki/API-and-Permissions)
 - [Concurrency and Idempotency](https://github.com/DimaGutierrez/slotguard/wiki/Concurrency-and-Idempotency)

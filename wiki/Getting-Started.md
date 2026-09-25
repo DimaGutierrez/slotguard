@@ -1,5 +1,7 @@
 # Setup and configuration
 
+**[Try the public browser demo →](https://diegogutierrez.pages.dev/slotguard/)** — no installation or account required. Bookings, conflicts and the 201 / 409 race are simulated in this tab; reloading resets the examples. The full backend described below uses real HTTP requests and PostgreSQL when installed locally. [Demo scope](https://github.com/DimaGutierrez/slotguard/blob/main/docs/public-demo.md).
+
 ## Docker local demo
 
 From the root, copy `.env.example` to `.env`, replace its password with a long random alphanumeric value, then run `docker compose up --build`. Open `http://127.0.0.1:8000`. Use `alice`, `bob` or `admin` / `slotguard-demo`. Compose is a local demonstration configuration, with loopback binding and a persistent database volume.

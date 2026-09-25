@@ -1,5 +1,7 @@
 # Concurrency and idempotency
 
+**[Try the public browser demo →](https://diegogutierrez.pages.dev/slotguard/)** — no installation or account required. Bookings, conflicts and the 201 / 409 race are simulated in this tab; reloading resets the examples. The full backend described below uses real HTTP requests and PostgreSQL when installed locally. [Demo scope](https://github.com/DimaGutierrez/slotguard/blob/main/docs/public-demo.md).
+
 For one room, confirmed intervals may not overlap. PostgreSQL enforces the rule using an exclusion constraint on room equality and `tstzrange(starts_at, ends_at, '[)')`. Adjacent bookings can share a boundary.
 
 The UI's availability is a snapshot. Two users can see the same room free. A write commits before the API returns 201; a conflicting write becomes 409. There is no predetermined winner in the demo.

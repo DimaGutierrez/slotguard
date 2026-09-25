@@ -1,5 +1,7 @@
 # Contributing
 
+**[Try the public browser demo →](https://diegogutierrez.pages.dev/slotguard/)** — no installation or account required. Bookings, conflicts and the 201 / 409 race are simulated in this tab; reloading resets the examples. The full backend described below uses real HTTP requests and PostgreSQL when installed locally. [Demo scope](https://github.com/DimaGutierrez/slotguard/blob/main/docs/public-demo.md).
+
 Start with [Setup](https://github.com/DimaGutierrez/slotguard/wiki/Getting-Started). Use synthetic data and an isolated PostgreSQL database.
 
 Bug reports should include commit, OS, timezone, steps, expected/actual outcome and a minimal example. Never paste cookies, passwords, real meeting titles or database connection strings.
