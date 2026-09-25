@@ -59,7 +59,7 @@ cp .env.example .env
 docker compose up --build
 ```
 
-PowerShell: use `Copy-Item .env.example .env` for the first command. Open **http://127.0.0.1:8000** exactly; origin validation is enabled. The app is published only on loopback, and PostgreSQL has no published host port. The first build runs migrations and seeds fictional rooms and accounts.
+PowerShell: use `Copy-Item .env.example .env` for the first command. Open **https://diegogutierrez.pages.dev/slotguard/** exactly; origin validation is enabled. The app is published only on loopback, and PostgreSQL has no published host port. The first build runs migrations and seeds fictional rooms and accounts.
 
 Demo accounts: `alice`, `bob`, `admin`. Password for all three: `slotguard-demo`. These are intentionally public **local demo credentials**, not production defaults. Compose explicitly enables demo mode; application code defaults it off.
 
