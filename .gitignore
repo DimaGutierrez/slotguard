@@ -8,6 +8,7 @@ __pycache__/
 .ruff_cache/
 node_modules/
 dist/
+demo-dist/
 *.tsbuildinfo
 test-results/
 playwright-report/

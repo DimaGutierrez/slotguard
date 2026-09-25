@@ -2,6 +2,12 @@
 
 ![SlotGuard concept artwork: one slot, two requests](assets/readme-hero.png)
 
+## Try SlotGuard online
+
+**[Open the interactive demo →](https://diegogutierrez.pages.dev/slotguard/)** — no installation, account or password needed.
+
+Book a fictional room, explore conflict alternatives, switch demo personas and run the simulated 201 / 409 challenge. This Cloudflare Pages demo runs entirely in your browser, with no connection to the author's computer. Reloading resets the sample data. It illustrates the interface; real HTTP concurrency and PostgreSQL guarantees belong to the full backend below. [Demo scope and deployment](docs/public-demo.md).
+
 **One slot. Two requests. Fullstack booking, with concurrency you can see.**
 
 [![Checks](https://github.com/DimaGutierrez/slotguard/actions/workflows/checks.yml/badge.svg)](https://github.com/DimaGutierrez/slotguard/actions/workflows/checks.yml)
@@ -10,9 +16,11 @@
 
 Two people see an open room. Both click Book. SlotGuard makes the success, the conflict and the next step visible—with PostgreSQL protecting the reservation, not a disabled button.
 
-**Status:** working v0.1 local fullstack prototype. One workspace per installation. No hosted service, external calendar sync, payments or background reminders. The banner is concept artwork; the app runs real HTTP requests and database transactions.
+**Full backend status:** working v0.1 local fullstack prototype. One workspace per installation. No hosted backend service, external calendar sync, payments or background reminders. The banner is concept artwork; the locally installed application runs real HTTP requests and database transactions. The public demo above uses a separate browser simulation.
 
 ## See the race
+
+For the **real PostgreSQL race**, follow these local installation steps. For a quick interface preview, [open the online simulation](https://diegogutierrez.pages.dev/slotguard/) and select **Concurrency lab**.
 
 1. Start the local demo and sign in as `alice` with `slotguard-demo`.
 2. Open **Concurrency lab** and click **Run the challenge**.
@@ -42,6 +50,8 @@ The UI refreshes after mutations, on window focus, or manually. It is not a live
 ## Quick start: local Docker demo
 
 Requires Docker with Compose. From the repository root:
+
+These instructions run the full backend on your own computer. `127.0.0.1` is a loopback address for local installation, not the public demo URL.
 
 ```bash
 cp .env.example .env

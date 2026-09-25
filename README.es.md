@@ -2,6 +2,12 @@
 
 ![SlotGuard: una sala, dos solicitudes](assets/readme-hero.png)
 
+## Probalo online
+
+**[Abrir SlotGuard →](https://diegogutierrez.pages.dev/slotguard/)** — sin instalar nada ni crear una cuenta.
+
+Reservá salas ficticias, probá alternativas ante conflictos, cambiá de personaje y ejecutá el desafío simulado 201 / 409. Está alojado en Cloudflare Pages y funciona en tu navegador, sin conectarse a la PC del autor. Al recargar se restablecen los ejemplos. Es una simulación de la interfaz; las garantías reales de PostgreSQL y las solicitudes HTTP se prueban con el backend completo que se explica debajo. [Alcance de la demo](docs/public-demo.md).
+
 **Dos personas. Una sala. El mismo horario. ¿Quién consigue reservar?**
 
 [English](README.md) · [Wiki](https://github.com/DimaGutierrez/slotguard/wiki) · [Discussions](https://github.com/DimaGutierrez/slotguard/discussions)
@@ -9,6 +15,8 @@
 SlotGuard es un prototipo fullstack funcional de reservas de salas. React y TypeScript muestran disponibilidad y alternativas; FastAPI y PostgreSQL protegen la escritura cuando dos solicitudes compiten.
 
 ## Probalo localmente
+
+Esta sección instala el backend completo en tu propia computadora. La dirección `127.0.0.1` corresponde a esa instalación local; para probar la demo pública usá el enlace anterior.
 
 Necesitás Docker con Compose. Desde la raíz:
 
