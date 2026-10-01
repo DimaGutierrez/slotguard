@@ -89,4 +89,4 @@ The test suite exercises overlap and adjacency, independent rooms, repeated HTTP
 
 English and Spanish are welcome. A small reproducible bug, a confusing screen or a useful alternative is a great contribution. [Contribution guide](CONTRIBUTING.md) · [Roadmap](docs/roadmap.md).
 
-Created by [Diego Gutierrez](https://github.com/DimaGutierrez). MIT license. Concept artwork was generated with imagegen; [prompts and placement](assets/PROMPTS.md) are included.
+Created by [Diego Ramiro Gutierrez](https://github.com/DimaGutierrez). MIT license. Concept artwork was generated with imagegen; [prompts and placement](assets/PROMPTS.md) are included.
